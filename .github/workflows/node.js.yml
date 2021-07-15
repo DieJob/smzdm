@@ -27,5 +27,5 @@ jobs:
         CORP_SECRET: ${{ secrets.CORP_SECRET }}
         TO_USER: ${{ secrets.TO_USER }}
         AGENT_ID: ${{ secrets.AGENT_ID }}
-        COOKIE: ${{ secrets.COOKIE}}
+        COOKIE: ${{ secrets.SMZDM_COOKIE }}
       run: node ./smzdm_checkin.js
