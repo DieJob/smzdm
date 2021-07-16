@@ -21,6 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         npm install
+        echo ${{ secrets.COOKIE }}
     - name: run cmd
       env:
         CORP_ID: ${{ secrets.CORP_ID }}
