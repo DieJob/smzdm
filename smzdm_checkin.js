@@ -4,7 +4,7 @@ const { MagicJS } = require('./util/magicJs.js');
 const { hex_md5 } = require('./util/md5.js');
 const { sendMsg } = require('./util/wechat.js');
 const scriptName = '什么值得买签到'
-let magicJS = MagicJS(scriptName, "DEBUG");
+let magicJS = MagicJS(scriptName, "INFO");
 
 function randomStr() {
   let len = 17;
