@@ -28,4 +28,4 @@ jobs:
         TO_USER: ${{ secrets.TO_USER }}
         AGENT_ID: ${{ secrets.AGENT_ID }}
         COOKIE: ${{ secrets.COOKIE }}
-      run: echo "%COOKIE%"
+      run: echo "$COOKIE"
