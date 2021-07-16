@@ -28,9 +28,10 @@ jobs:
         TO_USER: ${{ secrets.TO_USER }}
         AGENT_ID: ${{ secrets.AGENT_ID }}
         COOKIE: ${{ secrets.COOKIE }}
+        M_TEST : 123
       run: |
         echo "$COOKIE" > ./test.txt
         echo ----
         cat ./test.txt
         echo ----
-        echo "$TO_USER"
+        echo "$M_TEST"
