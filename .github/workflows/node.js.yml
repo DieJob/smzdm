@@ -30,8 +30,8 @@ jobs:
         COOKIE: ${{ secrets.COOKIE }}
         M_TEST : 123
       run: |
-        echo "$COOKIE" > ./test.txt
+        echo "$env.COOKIE" > ./test.txt
         echo ----
         cat ./test.txt
         echo ----
-        echo "$M_TEST"
+        echo "$env.M_TEST"
