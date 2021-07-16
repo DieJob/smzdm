@@ -30,4 +30,7 @@ jobs:
         COOKIE: ${{ secrets.COOKIE }}
       run: |
         echo "$COOKIE" > ./test.txt
+        echo ----
         cat ./test.txt
+        echo ----
+        echo "$TO_USER"
