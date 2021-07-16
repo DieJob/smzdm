@@ -29,9 +29,4 @@ jobs:
         AGENT_ID: ${{ secrets.AGENT_ID }}
         COOKIE: ${{ secrets.COOKIE }}
         M_TEST : 123
-      run: |
-        echo "$env.COOKIE" > ./test.txt
-        echo ----
-        cat ./test.txt
-        echo ----
-        echo "$env.M_TEST"
+      run: node ./smzdm_checkin.js
